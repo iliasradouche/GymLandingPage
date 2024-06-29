@@ -13,7 +13,7 @@ const HeroSlider = () => {
         <div className="h-full flex justify-end pt-48">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px]">
             <motion.h1
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -22,7 +22,7 @@ const HeroSlider = () => {
               <span>Where Hard</span>work meets success
             </motion.h1>
             <motion.p
-              variants={fadeIn("up", 0.6)}
+              variants={fadeIn("up", 0.4)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -32,7 +32,7 @@ const HeroSlider = () => {
               convallis, eros vel dignissim pharetra.
             </motion.p>
             <motion.div
-              variants={fadeIn("up", 0.8)}
+              variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -55,7 +55,7 @@ const HeroSlider = () => {
         <div className="h-full flex justify-end pt-48">
           <div className="flex flex-col items-center lg:items-start lg:max-w-[700px]">
             <motion.h1
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.2)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
@@ -74,7 +74,7 @@ const HeroSlider = () => {
               convallis, eros vel dignissim pharetra.
             </motion.p>
             <motion.div
-              variants={fadeIn("up", 0.4)}
+              variants={fadeIn("up", 0.6)}
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.2 }}
