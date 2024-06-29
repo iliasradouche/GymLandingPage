@@ -14,10 +14,18 @@ const SwiperButton = ({
   const swiper = useSwiper();
   return (
     <div className={`${containerStyles}`}>
-      <button title="btn swipe left" className={`${btnStyles}`} onClick={() => swiper.slidePrev()}>
+      <button
+        title="suivant"
+        className={`${btnStyles}`}
+        onClick={() => swiper.slidePrev()}
+      >
         <PiCaretLeftBold className={`${iconsStyles}`} />
       </button>
-      <button title="btn swipe right" className={`${btnStyles}`} onClick={() => swiper.slideNext()}>
+      <button
+        title="precedent"
+        className={`${btnStyles}`}
+        onClick={() => swiper.slideNext()}
+      >
         <PiCaretRightBold className={`${iconsStyles}`} />
       </button>
     </div>
