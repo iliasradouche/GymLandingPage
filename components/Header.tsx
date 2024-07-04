@@ -29,7 +29,7 @@ const Header = () => {
       <div className="container mx-auto h-full flex items-center justify-between">
         {/* Logo */}
         <Link href="">
-          <Image src={"/img/logowhite.png"} width={117} height={55} alt="" />
+          <Image src={"/assets/img/logo_1.jpg"} width={60} height={55} alt="" className="rounded-full" />
         </Link>
         {/* Mobile Nav - for small devices only */}
         <MobileNav
