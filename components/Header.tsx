@@ -47,10 +47,10 @@ const Header = () => {
         <div className="flex items-center gap-4">
           {/* Login button */}
           <div className="text-white flex items-center gap-4">
-            <button className="hover:text-black transition-all w-[90px] h-[40px] rounded-lg text-base uppercase bg-accent font-medium">
+            <button className="hover:text-black transition-all w-[90px] h-[40px] rounded-full text-base uppercase bg-accent font-medium">
               Login
             </button>
-            <button className="hover:text-black transition-all w-[90px] h-[40px] rounded-lg text-base uppercase bg-accent font-medium">
+            <button className="hover:text-black transition-all w-[90px] h-[40px] rounded-full text-base uppercase bg-accent font-medium">
               Register
             </button>
           </div>

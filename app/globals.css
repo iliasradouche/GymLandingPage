@@ -12,7 +12,7 @@
     }
 
     .h1 {
-        @apply text-white text-5xl lg:text-[90px] tracking-[-2px];
+        @apply text-white text-5xl lg:text-[70px] tracking-[-2px];
 
     }
 
@@ -25,7 +25,7 @@
     }
 
     .h4 {
-        @apply text-[26px]
+        @apply text-[20px]
     }
 
     .h5 {

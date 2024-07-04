@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Oswald } from "next/font/google";
+import { Roboto, Oswald } from '@next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
 const oswald = Oswald({
   subsets: ["latin"],
   weight: ["200", "300", "400", "600", "700"],
-  variable: "--font-poppins",
+  variable: "--font-oswald",
 });
 
 const roboto = Roboto({

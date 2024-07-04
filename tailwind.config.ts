@@ -18,8 +18,8 @@ const config: Config = {
       xl: "1400px",
     },
     fontFamily: {
-      oswald: "var(--font-oswald)",
-      roboto: "var(--font-roboto)",
+      oswald: "var(--font-oswald) sans-serif",
+      roboto: "var(--font-roboto) sans-serif",
     },
     backgroundImage: {
       hero: "url(/img/hero/bg_hero.jpg)",
