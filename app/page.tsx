@@ -13,12 +13,12 @@ export default function Home() {
     <main>
       <Hero />
       <About />
-      <Classes />
+{/*       <Classes /> */}
       <Team />
       <Membership />
-      <Testimonials />
-      <Blog />
-      <Brands />
+{/*       <Testimonials /> */}
+{/*       <Blog /> */}
+{/*       <Brands /> */}
       {/* Temporary div */}
       {/* <div className="h-[3000px]"></div> */}
     </main>

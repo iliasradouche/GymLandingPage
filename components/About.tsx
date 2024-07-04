@@ -26,34 +26,44 @@ const featured = [
 ];
 const About = () => {
   return (
-    <section className="pt-8 pb-14 lg:pt-16 lg:pb-28" id="about">
-      <div className="container mx-auto">
+    <section className="pt-8 pb-14 lg:pt-20 lg:pb-25 bg-black" id="about">
+      <motion.div
+        variants={fadeIn("up", 0.2)}
+        initial="hidden"
+        whileInView={"show"}
+        viewport={{ once: false, amount: 0.2 }}
+        className="container mx-auto"
+      >
         <div className="flex flex-col items-center gap-2 mb-8">
-          <h2 className="h2 text-center">About us</h2>
-          <p className="max-w-[600px] mx-auto text-center">
+          <h2 className="h2 text-center text-white">About us</h2>
+          <p className="max-w-[600px] mx-auto text-center text-white">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
             convallis, eros vel dignissim pharetra.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16 text-white">
           {featured.map((feature, index) => {
             return (
-              <div
-                className="flex flex-col justify-center items-center gap-4 border p-10"
+              <motion.div
+                variants={fadeIn("up", 0.4)}
+                initial="hidden"
+                whileInView={"show"}
+                viewport={{ once: false, amount: 0.2 }}
+                className="flex flex-col justify-center items-center gap-4 border p-10 hover:bg-lime-100 hover:text-black"
                 key={index}
               >
-                <div className="text-4xl bg-primary-300 text-white w-[80px] h-[80px] rounded-full flex justify-center items-center">
+                <div className="text-4xl bg-lime-400 text-white w-[80px] h-[80px] rounded-full flex justify-center items-center">
                   {feature.icon}
                 </div>
                 <div className="flex flex-col justify-center items-center text-center">
                   <h4 className="h4 text-accent">{feature.title}</h4>
                   <p>{feature.subtitle}</p>
                 </div>
-              </div>
+              </motion.div>
             );
           })}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

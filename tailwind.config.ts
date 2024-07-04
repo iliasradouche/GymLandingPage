@@ -22,7 +22,7 @@ const config: Config = {
       roboto: "var(--font-roboto) sans-serif",
     },
     backgroundImage: {
-      hero: "url(/img/hero/bg_hero.jpg)",
+      hero: "url(/assets/img/hero/bg_hero.jpg)",
       membership: "url(/assets/img/membership/membership.jpg)",
     },
     extend: {
