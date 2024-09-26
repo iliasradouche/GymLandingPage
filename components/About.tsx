@@ -49,7 +49,7 @@ const About = () => {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.2 }}
-                className="flex flex-col justify-center items-center gap-4 border p-10 hover:bg-lime-100 hover:text-black"
+                className="flex flex-col justify-center items-center gap-4 border p-10 hover:bg-lime-100 hover:text-black rounded-xl"
                 key={index}
               >
                 <div className="text-4xl bg-lime-400 text-white w-[80px] h-[80px] rounded-full flex justify-center items-center">

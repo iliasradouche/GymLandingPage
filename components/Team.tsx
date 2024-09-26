@@ -70,8 +70,8 @@ const Team = () => {
                 className="flex flex-col items-center text-center"
                 key={index}
               >
-                <div className="relative w-[320px] h-[230px] mx-auto mb-4 ">
-                  <Image src={trainer.image} fill alt="" />
+                <div className="relative w-[298px] h-[200px] mx-auto mb-4">
+                  <Image src={trainer.image} fill alt="" className="rounded-lg"/>
                 </div>
                 <h4 className="h4 mb-2 text-accent">{trainer.name}</h4>
                 <p className="uppercase text-xs tracking-[3px] mb-2">
