@@ -3,6 +3,7 @@ import { Roboto, Oswald } from '@next/font/google';
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/whatsappButton";
 
 const oswald = Oswald({
   subsets: ["latin"],
@@ -27,13 +28,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="bg-gray-200">
+    <html lang="en">
       <body
-        className={`${oswald.variable} ${roboto.variable} w-full max-w-[1920px] mx-auto bg-white`}
+        className={`${oswald.variable} ${roboto.variable} w-full max-w-[1920px] mx-auto relative overflow-x-hidden`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <div className="bg-gradient-to-b from-black to-gray-900 min-h-screen">
+          <Header />
+          {children}
+          <Footer />
+          <WhatsAppButton />
+        </div>
       </body>
     </html>
   );

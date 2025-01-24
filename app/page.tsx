@@ -10,17 +10,20 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
-      <Hero />
-      <About />
-{/*       <Classes /> */}
-      <Team />
-      <Membership />
-{/*       <Testimonials /> */}
-{/*       <Blog /> */}
-{/*       <Brands /> */}
-      {/* Temporary div */}
-      {/* <div className="h-[3000px]"></div> */}
+    <main className="relative">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-accent blur-[120px] rounded-full opacity-20" />
+        <div className="absolute top-40 -left-40 w-80 h-80 bg-purple-600 blur-[120px] rounded-full opacity-20" />
+      </div>
+      <div className="relative z-10">
+        <Hero />
+        <About />
+        <Team />
+        <Membership />
+        <Testimonials />
+        <Blog />
+        <Brands />
+      </div>
     </main>
   );
 }

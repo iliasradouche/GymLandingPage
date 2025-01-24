@@ -4,6 +4,8 @@ const CustomButton = ({
 }: {
   text: string;
   containerStyles: string;
+  onMouseEnter?: () => void;
+  onMouseLeave?: () => void;
 }) => {
   return (
     <button

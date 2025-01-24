@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  
+:root {
+    --accent-color: #9BB700; /* Your accent color */
+    --accent-hover-color: #839900; /* Darker shade */
+  }
 @layer base {
     body {
         @apply font-roboto;
@@ -36,3 +45,44 @@
 .active {
     @apply text-accent;
 }
+
+@layer utilities {
+    .text-shadow-sm {
+      text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    .text-shadow-lg {
+      text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    @keyframes scroll {
+      0% { transform: translateY(0); opacity: 1; }
+      100% { transform: translateY(15px); opacity: 0; }
+    }
+    .animate-scroll {
+      animation: scroll 1.5s infinite;
+    }
+  }
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 8px;
+   }
+   
+   ::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+   }
+   
+   ::-webkit-scrollbar-thumb {
+    background: #9BB700;
+    border-radius: 10px;
+    border: 2px solid #000000;
+   }
+   
+   ::-webkit-scrollbar-thumb:hover {
+    background: #839900;
+   }
+   
+   /* Firefox */
+   * {
+    scrollbar-width: thin;
+    scrollbar-color: #9BB700 #000000;
+   }
