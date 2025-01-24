@@ -92,7 +92,7 @@ const Testimonials = () => {
 
                 <div className="w-full md:w-2/3 text-center md:text-left">
                   <p className="text-white text-lg md:text-xl italic leading-relaxed mb-6">
-                    "{testimonials[activeTestimonial].quote}"
+                  &#34;{testimonials[activeTestimonial].quote}&#34;
                   </p>
                   
                   <div className="space-y-2">
